@@ -1,0 +1,144 @@
+<!-- Account Registration Card (Your Existing Code with "More" trigger) -->
+<div class="col-lg-4">
+  <div class="card service-box text-center p-4">
+    <div class="service-icon-bg mx-auto avatar-xxl p-4"
+         style="background-image: url(static/image/service-icon-bg.png)">
+      <div class="service-box-icon justify-content-center">
+        <img src="static/picture/user.png" alt="" class="img-fluid d-block">
+      </div>
+    </div>
+    <h4 class="service-title mt-4 mb-3 f-18">Account Registration</h4>
+    <p class="service-subtitle mb-4 f-15"></p>
+    <a href="#" class="read-more" id="openModal">More<span class="right-icon ml-2">&#8594;</span></a>
+  </div>
+</div>
+
+<!-- FAQ Modal -->
+<div id="faqModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Account Registration FAQs</h2>
+    <input type="text" id="faqSearch" placeholder="Search FAQs..." onkeyup="filterFAQs()">
+    <div id="faqList">
+      <div class="faq-item">
+        <div class="faq-question">How do I create an account?</div>
+        <div class="faq-answer">Click on the "Sign Up" button and fill in your email, password, and other required details.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What should I do if I forget my password?</div>
+        <div class="faq-answer">Use the "Forgot Password" link on the login page to reset your password via email.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How do I verify my email address?</div>
+        <div class="faq-answer">After registration, check your inbox for a verification email and click the link inside.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I register using a phone number?</div>
+        <div class="faq-answer">Yes, you can register with a phone number if supported in your region.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal + FAQ Styles -->
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 800px;
+    position: relative;
+  }
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: #000;
+  }
+
+  #faqSearch {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  .faq-question {
+    font-weight: 600;
+    cursor: pointer;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 10px;
+    background: #fdfdfd;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+</style>
+
+<!-- Script for Modal and FAQ Toggle -->
+<script>
+  const modal = document.getElementById('faqModal');
+  const openBtn = document.getElementById('openModal');
+  const closeBtn = document.getElementById('closeModal');
+
+  openBtn.onclick = () => modal.style.display = 'block';
+  closeBtn.onclick = () => modal.style.display = 'none';
+  window.onclick = (event) => {
+    if (event.target === modal) modal.style.display = 'none';
+  };
+
+  // Toggle FAQ Answers
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  });
+
+  // Filter FAQs
+  function filterFAQs() {
+    const input = document.getElementById('faqSearch').value.toLowerCase();
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const q = item.querySelector('.faq-question').textContent.toLowerCase();
+      const a = item.querySelector('.faq-answer').textContent.toLowerCase();
+      item.style.display = (q.includes(input) || a.includes(input)) ? 'block' : 'none';
+    });
+  }
+</script>
