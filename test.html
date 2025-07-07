@@ -2,41 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Free Email Sender</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HI-SEAS CO. LTD. INC.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <h2>Send an Email</h2>
-  <form id="emailForm">
-    <label>To: </label><br />
-    <input type="email" id="to" placeholder="Recipient Email" required /><br /><br />
-    
-    <label>Subject: </label><br />
-    <input type="text" id="subject" placeholder="Subject" required /><br /><br />
-    
-    <label>Message: </label><br />
-    <textarea id="message" placeholder="Your message here" required></textarea><br /><br />
-    
-    <button type="submit">Send Email</button>
-  </form>
+<body class="font-sans text-gray-900">
 
-  <!-- Include SMTP.js -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    document.getElementById('emailForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      Email.send({
-        SecureToken: "YOUR_SECURE_TOKEN_HERE",
-        To: document.getElementById('to').value,
-        From: "YOUR_EMAIL_ADDRESS",
-        Subject: document.getElementById('subject').value,
-        Body: document.getElementById('message').value,
-      }).then(
-        message => alert("Email sent successfully: " + message)
-      ).catch(
-        error => alert("Failed: " + error)
-      );
-    });
-  </script>
+<!-- 🔴 Navbar -->
+<header class="bg-white border-b">
+  <div class="bg-red-700 text-white px-6 py-2 text-right text-sm">Contact Us</div>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <img src="static/picture/hiseas logo.jpg" alt="PLDT Logo" class="h-10" />
+    <nav class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="#" class="hover:text-red-600">Home</a>
+      <a href="#" class="hover:text-red-600">Projects</a>
+      <a href="#" class="hover:text-red-600">Services</a>
+      <a href="#" class="hover:text-red-600">Accomplishments</a>
+      <a href="#" class="hover:text-red-600">About</a>
+      <a href="#" class="hover:text-red-600">Contact Us</a>
+      <a href="#" class="hover:text-red-600">Careers</a>
+    </nav>
+    <div class="md:hidden text-gray-500 text-2xl">☰</div>
+  </div>
+</header>
+
+<!-- 🖼 Hero Carousel -->
+<section class="relative">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide relative h-[70vh]">
+        <img src="hero1.jpg" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center px-6">
+          <div class="text-white">
+            <h1 class="text-4xl md:text-5xl font-bold animate-fade-in">HI-SEAS CO. LTD. INC.<br></h1>
+            <button class="mt-6 bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full text-sm font-semibold">Full Release →</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide relative h-[70vh]">
+        <img src="hero2.jpg" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center px-6">
+          <div class="text-white">
+            <h1 class="text-4xl md:text-5xl font-bold animate-fade-in">Smart Solutions<br>For Every Filipino</h1>
+            <button class="mt-6 bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full text-sm font-semibold">Discover More →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<script>
+  new Swiper('.hero-swiper', {
+    loop: true,
+    autoplay: { delay: 5000 },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    effect: 'fade'
+  });
+</script>
+
+<!-- 🏢 Our Company Section -->
+<section class="relative bg-cover bg-center text-white py-20" style="background-image: url('company-bg.jpg');">
+  <div class="bg-black bg-opacity-60 py-12 rounded-xl mx-4 md:mx-20">
+    <div class="text-center px-6">
+      <h2 class="text-4xl font-bold mb-4">Our Company</h2>
+      <p class="text-lg mb-6 max-w-2xl mx-auto">Through our culture of innovation, we strive to empower every Filipino’s infinite potential.</p>
+      <button class="bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full text-sm font-semibold">Learn More →</button>
+    </div>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+      <div class="bg-white text-gray-900 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-bold text-red-700 mb-2">Our Purpose</h3>
+        <p>We are a Filipino company, inspiring innovation and meaningful connections through generations.</p>
+      </div>
+      <div class="bg-white text-gray-900 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-bold text-red-700 mb-2">Our Vision</h3>
+        <p>We aspire to be a happy space using technology to empower and build bridges of collaboration.</p>
+      </div>
+      <div class="bg-white text-gray-900 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-bold text-red-700 mb-2">Our Mission</h3>
+        <p>Our people deliver meaningful connections and experiences for our customers to live a fuller life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 💼 Our Business -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Our Business</h2>
+      <p class="text-gray-600 mb-6">From telecommunications and digital solutions to enterprise services and beyond, our businesses deliver cutting-edge experiences.</p>
+      <button class="bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full text-sm font-semibold">About Our Business →</button>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <img src="logo1.png" alt="PLDT Home" class="bg-white p-4 rounded-xl shadow-md" />
+      <img src="logo2.png" alt="Smart" class="bg-white p-4 rounded-xl shadow-md" />
+      <img src="logo3.png" alt="ePLDT" class="bg-white p-4 rounded-xl shadow-md" />
+      <img src="logo4.png" alt="TNT" class="bg-white p-4 rounded-xl shadow-md" />
+      <img src="logo5.png" alt="Maya" class="bg-white p-4 rounded-xl shadow-md" />
+      <img src="logo6.png" alt="Sun" class="bg-white p-4 rounded-xl shadow-md" />
+    </div>
+  </div>
+</section>
+
+<!-- 🎯 Opportunities Await -->
+<section class="relative bg-black text-white py-24">
+  <img src="opportunity-bg.jpg" class="absolute inset-0 object-cover w-full h-full opacity-40" />
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">Opportunities Await</h2>
+    <p class="text-lg mb-6">Join us in our commitment to delivering quality service, innovative products, and digital solutions to all Filipinos.</p>
+    <button class="bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full text-sm font-semibold">Join Us →</button>
+  </div>
+</section>
+
+<!-- ⚫ Footer -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+      <img src="logo-white.png" class="h-10 mb-4" />
+      <p class="text-sm">Ramon Cojuangco Building, Makati Ave., Makati City, Metro Manila 1200</p>
+      <p class="text-sm mt-2">📞 171 | ✉️ media@pldt.com.ph</p>
+      <div class="flex space-x-3 mt-4 text-xl">
+        <a href="#">📘</a><a href="#">📸</a><a href="#">🎥</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-2">About</h3>
+      <ul class="text-sm space-y-1">
+        <li><a href="#">What Drives PLDT</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">Timeline</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-2">Governance</h3>
+      <ul class="text-sm space-y-1">
+        <li><a href="#">Structure</a></li>
+        <li><a href="#">Policies</a></li>
+        <li><a href="#">Stakeholders</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-2">Investor Relations</h3>
+      <ul class="text-sm space-y-1">
+        <li><a href="#">Disclosures</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Financials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-sm mt-8">© 2025 PLDT Clone. All rights reserved.</div>
+</footer>
+
 </body>
 </html>
