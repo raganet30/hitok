@@ -17,6 +17,7 @@
   <link href="static/css/style.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="static/picture/hitok logo - transparent bg.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH7YfQd+Wz0Eblj+q3v3Er1WEmFvXXeYDAm7e9XmXUdV6z8T0quv8pOKfjFz1MRoBInB5nH0KmvMNSkU0OHxXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
   @media (max-width: 576px) {
@@ -80,14 +81,26 @@
            
         </ul>
         <ul class="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
-          <li class="list-inline-item ml-0"><a href="#" class="menu-social-link"><i class="icon-xs sw_1-5"
-                data-feather="facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="menu-social-link"><i class="icon-xs sw_1-5"
-                data-feather="twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="menu-social-link"><i class="icon-xs sw_1-5"
-                data-feather="instagram"></i></a></li>
-          <li class="list-inline-item mr-0"><a href="#" class="menu-social-link"><i class="icon-xs sw_1-5"
-                data-feather="linkedin"></i></a></li>
+          <!-- Facebook -->
+          <li class="list-inline-item ml-0">
+            <a href="#" target="_blank" class="menu-social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <!-- Telegram -->
+          <li class="list-inline-item ml-0">
+            <a href="#" target="_blank" class="menu-social-link">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+          </li>
+
+          <!-- WhatsApp -->
+          <li class="list-inline-item ml-0">
+            <a href="#" target="_blank" class="menu-social-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -96,26 +109,27 @@
   <!-- Navbar End --><!-- Hero Start -->
   <section class="hero-1-bg bg-light" style="background-image: url(static/image/hero-1-bg-img.png); padding-top: 100px;"
     id="home">
-    <div class="container" style="padding-bottom: 50px;">
-      <p class="hero-1-title  text-dark" style=" font-weight: bold;">Go to the App Store to download</p>
-      <div class="row ">
-        <div class="col-lg-2 mb-4">
-          <a href="https://apps.apple.com/app/hitok/id6569241593">
-            <img width="100%" style="max-width: 140px;" src="static/image/appstore.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-2  mb-4">
-          <a href="https://play.google.com/store/apps/details?id=com.hitok.prod">
-            <img width="100%" style="max-width: 140px;" src="static/image/googleplay.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-2  mb-4">
-          <a href="https://web.hi-tok.net/appdownload/android/HiTok.apk"><img width="100%" style="max-width: 140px;"
-              src="static/image/android.png" alt=""></a>
-        </div>
-      </div>
-      <a href="#" id="myScheme" class="btn btn-info" style="display: none;">Open HiTok App</a>
-    </div>
+    <div class="container text-left" style="padding-bottom: 50px;">
+  <p class="hero-1-title text-dark fw-bold">
+    Download Hitok now!
+  </p>
+
+  <div class="d-flex flex-wrap justify-content-left" style="gap: 24px;">
+    <a href="https://apps.apple.com/app/hitok/id6569241593">
+      <img src="static/image/appstore.png" alt="App Store" class="img-fluid" style="max-width: 140px;">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.hitok.prod">
+      <img src="static/image/googleplay.png" alt="Google Play" class="img-fluid" style="max-width: 140px;">
+    </a>
+    <a href="https://web.hi-tok.net/appdownload/android/HiTok.apk">
+      <img src="static/image/android.png" alt="Direct Link" class="img-fluid" style="max-width: 140px;">
+    </a>
+  </div>
+
+  <a href="#" id="myScheme" class="btn btn-info mt-4" style="display: none;">Open HiTok App</a>
+</div>
+
+    
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-6">
