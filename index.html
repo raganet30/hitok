@@ -8,6 +8,8 @@
   <meta name="description" content="HiTok combines messaging, e-wallet, and affordable internet services in one app">
   <meta name="keywords" content="hitok, social app, e-wallet, philippines internet, chat app">
   
+  
+
   <!-- Favicon -->
   <link rel="icon" href="static/picture/hitok logo - transparent bg.png">
   
@@ -15,8 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
   <!-- Bootstrap CSS -->
-  <link href="static/css/bootstrap.min.css" rel="stylesheet">
-  
+  <!-- <link href="static/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="static/css/owl.carousel.min.css">
   
@@ -24,6 +27,7 @@
   <link href="static/css/style.min.css" rel="stylesheet">
   
   <link rel="stylesheet" href="static/css/custom.css">
+  
 </head>
 
 <body>
@@ -70,11 +74,11 @@
           <h1 class="hero-title">Connect & Chat with <span class="text-primary">HiTok</span></h1>
           <p class="hero-subtitle">All-in-one app for messaging, payments and affordable internet services in your community</p>
           
-          <div class="d-flex flex-wrap gap-3 mb-4">
+          <div class="d-flex flex-wrap gap-2 mb-4">
             <a href="#" class="btn btn-primary btn-lg px-4" onclick="openVideoModal()">
               <i class="fas fa-play-circle mr-2"></i> Watch Demo
             </a>
-            <span style="width: 5px;"></span>
+            <!-- <span style="width: 5px;"></span> -->
             <a href="#features" class="btn btn-outline-primary btn-lg px-4">
               Explore Features
             </a>
@@ -82,18 +86,22 @@
           
           <div class="app-download-badges">
             <p class="text-muted mb-2">Download Now:</p>
-            <div class="d-flex flex-wrap gap-3">
+            <div class="d-flex flex-wrap gap-2">
               <a href="https://apps.apple.com/app/hitok/id6569241593">
                 <img src="static/image/appstore.png" alt="App Store" class="app-badge" style="height: 45px;">
-              </a><span style="width: 5px;"></span>
+              </a>
+              <!-- <span style="width: 5px;"></span> -->
               <a href="https://play.google.com/store/apps/details?id=com.hitok.prod">
                 <img src="static/image/googleplay.png" alt="Google Play" class="app-badge" style="height: 45px;">
-              </a><span style="width: 5px;"></span>
+              </a>
+              <!-- <span style="width: 5px;"></span> -->
               <a href="https://web.hi-tok.net/appdownload/android/HiTok.apk">
                 <img src="static/image/android.png" alt="Direct Download" class="app-badge" style="height: 45px;">
               </a>
             </div>
           </div>
+
+          
         </div>
         <div class="col-lg-6">
           <div id="heroCarousel" class="carousel slide shadow-lg rounded-lg" data-ride="carousel">
@@ -284,7 +292,7 @@
                   <img src="static/picture/no-profile-picture-15258.png" 
                        class="rounded-circle me-3" width="50" alt="User">
                   <div>
-                    <h6 class="mb-0">Reggie De Guia</h6>
+                    <h6 id="maskedName" class="mb-0">Reggie De Guia</h6>
                     <div class="text-warning small">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -295,7 +303,7 @@
                     </div>
                   </div>
                 </div>
-                <h5 class="mb-2">Best community app!</h5>
+                <h5 class="mb-2" class="mb-2">Best community app!</h5>
                 <p class="mb-3">Convenient and effective.</p>
                 <!-- <div class="d-flex align-items-center">
                   <button class="btn btn-sm btn-outline-primary me-2">
@@ -309,8 +317,7 @@
             </div>
           </div>
 
-
-          <!-- Review 2 -->
+           <!-- Review 2 -->
           <div class="item">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body p-4">
@@ -318,7 +325,39 @@
                   <img src="static/picture/no-profile-picture-15258.png" 
                        class="rounded-circle me-3" width="50" alt="User">
                   <div>
-                    <h6 class="mb-0">Rex Cangayao</h6>
+                    <h6 id="maskedName" class="mb-0">Leandro Martin Tarrayo</h6>
+                    <div class="text-warning small">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="text-muted ms-2">11/11/24</span>
+                    </div>
+                  </div>
+                </div>
+                 <h5 class="mb-2">Convenient</h5>
+                <p class="mb-3">It was easy and convenient, its really the next future app.</p>
+                <!-- <div class="d-flex align-items-center">
+                  <button class="btn btn-sm btn-outline-primary me-2">
+                    <i class="fas fa-thumbs-up me-1"></i> 24
+                  </button>
+                  <button class="btn btn-sm btn-outline-secondary">
+                    <i class="fas fa-thumbs-down me-1"></i> 2
+                  </button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Review 3 -->
+          <div class="item">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="static/picture/no-profile-picture-15258.png" 
+                       class="rounded-circle me-3" width="50" alt="User">
+                  <div>
+                    <h6 id="maskedName" class="mb-0">Rex Cangayao</h6>
                     <div class="text-warning small">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -343,7 +382,7 @@
             </div>
           </div>
           
-           <!-- Review 3 -->
+           <!-- Review 4 -->
           <div class="item">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body p-4">
@@ -351,7 +390,7 @@
                   <img src="static/picture/no-profile-picture-15258.png" 
                        class="rounded-circle me-3" width="50" alt="User">
                   <div>
-                    <h6 class="mb-0">Ward Tuhay</h6>
+                    <h6 id="maskedName" class="mb-0">Ward Tuhay</h6>
                     <div class="text-warning small">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -375,6 +414,45 @@
               </div>
             </div>
           </div>
+
+          <!-- Review 5 -->
+          <div class="item">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="static/picture/no-profile-picture-15258.png" 
+                       class="rounded-circle me-3" width="50" alt="User">
+                  <div>
+                    <h6 id="maskedName" class="mb-0">Kenneth Ramos</h6>
+                    <div class="text-warning small">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="text-muted ms-2">08/08/25</span>
+                    </div>
+                  </div>
+                </div>
+                 <h5 class="mb-2">Best App</h5>
+                <p class="mb-3">Best app for messaging with free 45 mins. daily internet thru community wifi.</p>
+                <!-- <div class="d-flex align-items-center">
+                  <button class="btn btn-sm btn-outline-primary me-2">
+                    <i class="fas fa-thumbs-up me-1"></i> 24
+                  </button>
+                  <button class="btn btn-sm btn-outline-secondary">
+                    <i class="fas fa-thumbs-down me-1"></i> 2
+                  </button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+
+         
+
+
+
           
 
         </div>
@@ -389,187 +467,856 @@
     </div>
   </div>
 </section>
-  <!-- FAQ Section -->
-  <section class="section py-5 bg-white" id="faqs">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center mb-5">
-          <h2>Frequently Asked Questions</h2>
-          <p class="text-muted">Find quick answers to common questions</p>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="input-group mb-4">
-            <input type="text" id="faqSearch" class="form-control" placeholder="Search FAQs...">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-          </div>
-          
-          <div class="accordion" id="faqAccordion">
-            <!-- Account FAQs -->
-            <div class="faq-card">
-              <div class="faq-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
-                <h5 class="mb-0">How do I create a HiTok account?</h5>
-              </div>
-              <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
-                <div class="faq-body">
-                  <p>Creating a HiTok account is simple:</p>
-                  <ol>
-                    <li>Download the HiTok app from App Store or Google Play</li>
-                    <li>Open the app and tap "Register"</li>
-                    <li>Choose a nickname and enter your details</li>
-                    <li>Verify your phone number or email</li>
-                    <li>Set up your password</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Wallet FAQs -->
-            <div class="faq-card">
-              <div class="faq-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
-                <h5 class="mb-0">How do I add money to my HTC Wallet?</h5>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
-                <div class="faq-body">
-                  <p>You can top up your HTC Wallet through:</p>
-                  <ul>
-                    <li><strong>GCash:</strong> Scan the QR code in the app</li>
-                    <li><strong>Payment Centers:</strong> Visit authorized payment centers</li>
-                    <li><strong>Bank Transfer:</strong> Send to our designated bank accounts</li>
-                  </ul>
-                  <p>Minimum top-up amount is ₱50.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Internet FAQs -->
-            <div class="faq-card">
-              <div class="faq-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
-                <h5 class="mb-0">What internet packages are available?</h5>
-              </div>
-              <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
-                <div class="faq-body">
-                  <p>We offer flexible packages to suit your needs:</p>
-                  <div class="table-responsive">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>Package</th>
-                          <th>Price (HTC)</th>
-                          <th>Validity</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>2 Hours</td>
-                          <td>5</td>
-                          <td>1 day</td>
-                        </tr>
-                        <tr>
-                          <td>5 Hours</td>
-                          <td>10</td>
-                          <td>3 days</td>
-                        </tr>
-                        <tr>
-                          <td>1 Week</td>
-                          <td>99</td>
-                          <td>7 days</td>
-                        </tr>
-                        <tr>
-                          <td>1 Month</td>
-                          <td>299</td>
-                          <td>30 days</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- More FAQs can be added here -->
-          </div>
-          
-          <div class="text-center mt-4">
-            <a href="#contact" class="btn btn-primary">Still have questions? Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-<!-- Tutorials Section -->
-<section class="py-5 bg-light" id="tutorials">
+
+
+<!-- FAQ Section -->
+<section class="py-5 bg-white" id="faqs">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center mb-5">
-        <h2>Video Tutorials</h2>
-        <p class="text-muted">Learn how to use HiTok with these quick guides</p>
+        <h2>Frequently Asked Questions</h2>
+        <p class="text-muted">Find quick answers to common questions</p>
       </div>
     </div>
     
     <div class="row">
-      <div class="col-12">
-        <div class="owl-carousel owl-theme">
-          <!-- Tutorial 1 -->
-          <div class="item">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-img-top position-relative">
-                <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" class="img-fluid w-100" alt="How to Top Up">
-                <div class="play-button" data-video-id="VIDEO_ID_1" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;cursor:pointer;">
-                  <i class="fas fa-play-circle"></i>
+      <div class="col-lg-12">
+        <!-- <div class="input-group mb-4">
+          <input type="text" id="faqSearch" class="form-control" placeholder="Search FAQs...">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div> -->
+
+        <!-- Tab Navigation -->
+        <div class="scrollable-tabs">
+          <ul class="nav nav-tabs flex-nowrap" id="faqTabs" role="tablist">
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link active" id="account-tab" data-toggle="tab" href="#account" role="tab">
+                <i class="fas fa-user-circle d-none d-md-inline mr-md-2"></i>
+                <span>Account</span>
+              </a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab">
+                <i class="fas fa-id-card d-none d-md-inline mr-md-2"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" id="topup-tab" data-toggle="tab" href="#topup" role="tab">
+                <i class="fas fa-wallet d-none d-md-inline mr-md-2"></i>
+                <span>Top-up</span>
+              </a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" id="promotion-tab" data-toggle="tab" href="#promotion" role="tab">
+                <i class="fas fa-gift d-none d-md-inline mr-md-2"></i>
+                <span>Promotions</span>
+              </a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" id="internet-tab" data-toggle="tab" href="#internet-packages" role="tab">
+                <i class="fas fa-wifi d-none d-md-inline mr-md-2"></i>
+                <span>Internet</span>
+              </a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" id="social-tab" data-toggle="tab" href="#social" role="tab">
+                <i class="fas fa-users d-none d-md-inline mr-md-2"></i>
+                <span>Social</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+       
+        <!-- Tab Content -->
+        <div class="tab-content" id="faqTabContent">
+          
+          <!-- Account Registration Tab -->
+          <div class="tab-pane fade show active" id="account" role="tabpanel">
+            <div class="accordion" id="accountAccordion">
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="accountHeadingOne" data-toggle="collapse" data-target="#accountCollapseOne">
+                  <h5 class="mb-0">Where can I download HiTok?</h5>
+                </div>
+                <div id="accountCollapseOne" class="collapse" data-parent="#accountAccordion">
+                  <div class="faq-body">
+                    <p>You can download the HiTok app from:</p>
+                    <p><strong>Playstore (For Android Users)</strong></p>
+                    <ol>
+                      <li>Open your Google Playstore</li>
+                      <li>Search for HiTok</li>
+                      <li>Click The HiTok Logo</li>
+                      <li>Click Install</li>
+                    </ol>
+                    <p><strong>Appstore (For iOS or Apple User)</strong></p>
+                    <p><strong>Directlink (For devices connected to HiWiFi Networks)</strong></p>
+                  </div>
                 </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">How to Top Up</h5>
-                <p class="card-text text-muted">Learn how to add money to your HTC Wallet</p>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="accountHeadingTwo" data-toggle="collapse" data-target="#accountCollapseTwo">
+                  <h5 class="mb-0">How can I create a new Account?</h5>
+                </div>
+                <div id="accountCollapseTwo" class="collapse" data-parent="#accountAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open your HiTok application</li>
+                      <li>Click the "Go in" button</li>
+                      <li>Enter your desired nickname</li>
+                      <li>(Optional) Enter your recommendation code</li>
+                      <li>Bind your Phone number or email address</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="accountHeadingThree" data-toggle="collapse" data-target="#accountCollapseThree">
+                  <h5 class="mb-0">How can I Log-in on HiTok?</h5>
+                </div>
+                <div id="accountCollapseThree" class="collapse" data-parent="#accountAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open your HiTok application</li>
+                      <li>Click the - button</li>
+                      <li>Select to log in via Phone Number or Email Address</li>
+                      <li>Enter your Phone Number or Email Address</li>
+                      <li>Enter your Password</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="accountHeadingFour" data-toggle="collapse" data-target="#accountCollapseFour">
+                  <h5 class="mb-0">How can I bind my phone number or email address?</h5>
+                </div>
+                <div id="accountCollapseFour" class="collapse" data-parent="#accountAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile Icon at the bottom corner</li>
+                      <li>Click on Settings</li>
+                      <li>Click Account Security</li>
+                      <li>Click either Phone Number or Email Address</li>
+                      <li>Enter your details</li>
+                      <li>Click Send Verification Code</li>
+                      <li>Once Code is received, typed it in the verification bar</li>
+                      <li>Type in your Log-in Password</li>
+                      <li>Click Confirm</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="accountHeadingFive" data-toggle="collapse" data-target="#accountCollapseFive">
+                  <h5 class="mb-0">How can I change my password?</h5>
+                </div>
+                <div id="accountCollapseFive" class="collapse" data-parent="#accountAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile Icon at the bottom corner</li>
+                      <li>Click on Settings</li>
+                      <li>Click Account Security</li>
+                      <li>Click Change Log-in Password</li>
+                      <li>Type in Original Password</li>
+                      <li>Type in new password and re-enter it</li>
+                      <li>Click Confirm</li>
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Tutorial 2 -->
-          <div class="item">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-img-top position-relative">
-                <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" class="img-fluid w-100" alt="Get Free 45 Minutes">
-                <div class="play-button" data-video-id="VIDEO_ID_2" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;cursor:pointer;">
-                  <i class="fas fa-play-circle"></i>
+          <!-- Profile Management Tab -->
+          <div class="tab-pane fade" id="profile" role="tabpanel">
+            <div class="accordion" id="profileAccordion">
+              <div class="faq-card"> 
+                <div class="faq-header collapsed" id="profileHeadingOne" data-toggle="collapse" data-target="#profileCollapseOne">
+                  <h5 class="mb-0">How can I edit my profile?</h5>
+                </div>
+                <div id="profileCollapseOne" class="collapse" data-parent="#profileAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile button at the bottom corner</li>
+                      <li>Click your Name</li>
+                      <li>Click Dating Profile</li>
+                      <li>Click Edit button at the top corner</li>
+                      <li>Click the information you want to edit</li>
+                    </ol>
+                  </div>
                 </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Get Free 45 Minutes</h5>
-                <p class="card-text text-muted">Claim your daily free internet access</p>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="profileHeadingTwo" data-toggle="collapse" data-target="#profileCollapseTwo">
+                  <h5 class="mb-0">How can I change my nickname?</h5>
+                </div>
+                <div id="profileCollapseTwo" class="collapse" data-parent="#profileAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile button at the bottom corner</li>
+                      <li>Click Settings</li>
+                      <li>Click Account Security</li>
+                      <li>Type in new nickname</li>
+                      <li>Click Save at the top corner</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="profileHeadingThree" data-toggle="collapse" data-target="#profileCollapseThree">
+                  <h5 class="mb-0">How can I change my profile picture?</h5>
+                </div>
+                <div id="profileCollapseThree" class="collapse" data-parent="#profileAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile button at the bottom corner</li>
+                      <li>Click Settings</li>
+                      <li>Click Account Security</li>
+                      <li>Click the three dots at the top corner</li>
+                      <li>Click Album and select desired photo</li>
+                      <li>Click Done</li>
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Tutorial 3 -->
-          <div class="item">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-img-top position-relative">
-                <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" class="img-fluid w-100" alt="Transfer HTC">
-                <div class="play-button" data-video-id="VIDEO_ID_3" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:white;cursor:pointer;">
-                  <i class="fas fa-play-circle"></i>
+          <!-- Top-up & HTC Tab -->
+          <div class="tab-pane fade" id="topup" role="tabpanel">
+            <div class="accordion" id="topupAccordion">
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="topupHeadingOne" data-toggle="collapse" data-target="#topupCollapseOne">
+                  <h5 class="mb-0">What is HTC?</h5>
+                </div>
+                <div id="topupCollapseOne" class="collapse " data-parent="#topupAccordion">
+                  <div class="faq-body">
+                    <p>HTC or HiTok coin is the HiTok Application currency you can use in order to:</p>
+                    <ol>
+                      <li>Transfer Money</li>
+                      <li>Select a Traffic Data or Internet Package</li>
+                      <li>Purchasing and Transaction</li>
+                    </ol>
+                  </div>
                 </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Transfer HTC</h5>
-                <p class="card-text text-muted">Send money to friends and family</p>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="topupHeadingTwo" data-toggle="collapse" data-target="#topupCollapseTwo">
+                  <h5 class="mb-0">How can I top up in HiTok?</h5>
+                </div>
+                <div id="topupCollapseTwo" class="collapse" data-parent="#topupAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile button at the bottom corner</li>
+                      <li>Click Wallet</li>
+                      <li>Click Top up</li>
+                      <li>Type in or select the amount you want to top up</li>
+                      <li>Click Confirm</li>
+                      <li>Save the QR and pay at your G-cash</li>
+                      <li>Open your G-cash</li>
+                      <li>Click the QR at the bottom center</li>
+                      <li>Upload your HiTok recharge QR code</li>
+                      <li>Successful payment once receipt is confirmed!</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="topupHeadingThree" data-toggle="collapse" data-target="#topupCollapseThree">
+                  <h5 class="mb-0">How can I Transfer HTC?</h5>
+                </div>
+                <div id="topupCollapseThree" class="collapse" data-parent="#topupAccordion">
+                  <div class="faq-body">
+                    <p><strong>Option 1</strong></p>
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile button at the bottom corner</li>
+                      <li>Click Wallet</li>
+                      <li>Click Transfer</li>
+                      <li>Type your friend account number or bind mobile number</li>
+                      <li>Type in the amount you want to transfer</li>
+                      <li>Click Confirm</li>
+                    </ol>
+                    <p><strong>Option 2</strong></p>
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile button at the bottom corner</li>
+                      <li>Click the QR Icon at the top corner</li>
+                      <li>Click Scan</li>
+                      <li>Scan the QR Code of your friend</li>
+                      <li>Click Transfer</li>
+                      <li>Type the amount of HTC you want to transfer</li>
+                      <li>Click Confirm</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="topupHeadingFour" data-toggle="collapse" data-target="#topupCollapseFour">
+                  <h5 class="mb-0">What E-Wallet partner can we use to top-up?</h5>
+                </div>
+                <div id="topupCollapseFour" class="collapse" data-parent="#topupAccordion">
+                  <div class="faq-body">
+                    <ul>
+                      <li>Gcash Topup</li>
+                      <li>Fast Topup</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
+          <!-- Promotion, Points & Freebies Tab -->
+          <div class="tab-pane fade" id="promotion" role="tabpanel">
+            <div class="accordion" id="promotionAccordion">
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="promotionHeadingOne" data-toggle="collapse" data-target="#promotionCollapseOne">
+                  <h5 class="mb-0">How can I check my points from referral bonus?</h5>
+                </div>
+                <div id="promotionCollapseOne" class="collapse" data-parent="#promotionAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Refer a friend using your Referral Code or Referral Link</li>
+                      <li>Make sure Referred friend bind a Phone number or Email Address</li>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile Icon at the bottom corner</li>
+                      <li>Click Points to see successful referral</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="promotionHeadingTwo" data-toggle="collapse" data-target="#promotionCollapseTwo">
+                  <h5 class="mb-0">How can I convert my points from referral bonus?</h5>
+                </div>
+                <div id="promotionCollapseTwo" class="collapse" data-parent="#promotionAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Profile Icon at the bottom corner</li>
+                      <li>Click Points</li>
+                      <li>Click Point Conversion</li>
+                      <li>Enter the amount of Point you want to convert</li>
+                      <li>Click Confirm</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="promotionHeadingThree" data-toggle="collapse" data-target="#promotionCollapseThree">
+                  <h5 class="mb-0">How can I get my free 45 minute access?</h5>
+                </div>
+                <div id="promotionCollapseThree" class="collapse" data-parent="#promotionAccordion">
+                  <div class="faq-body">
+                    <p><strong>Option 1</strong></p>
+                    <ol>
+                      <li>Connect your device to the HiiWiFi Network</li>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Popped up 45 minutes at the bottom center</li>
+                      <li>Click 45 Minutes</li>
+                      <li>Click Confirm</li>
+                      <li>Enjoy your free 45 minutes free access</li>
+                    </ol>
+                    <p><strong>Option 2</strong></p>
+                    <ol>
+                      <li>Connect your device to the HiiWiFi Network</li>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Traffic Data icon at the bottom center</li>
+                      <li>Click Voucher Order</li>
+                      <li>Click 45 Minutes</li>
+                      <li>Click Confirm</li>
+                      <li>Enjoy your free 45 minutes free access</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internet Packages Tab -->
+          <div class="tab-pane fade" id="internet-packages" role="tabpanel">
+            <div class="accordion" id="internetAccordion">
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingOne" data-toggle="collapse" data-target="#internetCollapseOne">
+                  <h5 class="mb-0">What internet packages are available?</h5>
+                </div>
+                <div id="internetCollapseOne" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Price (HTC)</th>
+                            <th>Package</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>5 HTC</td>
+                            <td>2 Hours of Unlimited and Uninterrupted Internet Package</td>
+                          </tr>
+                          <tr>
+                            <td>10 HTC</td>
+                            <td>5 Hours of Unlimited and Uninterrupted Internet Package</td>
+                          </tr>
+                          <tr>
+                            <td>99 HTC</td>
+                            <td>1 Week of Unlimited and Uninterrupted Internet Package</td>
+                          </tr>
+                          <tr>
+                            <td>299 HTC</td>
+                            <td>1 Month of Unlimited and Uninterrupted Internet Package</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingTwo" data-toggle="collapse" data-target="#internetCollapseTwo">
+                  <h5 class="mb-0">Can I pause my time at HiTok?</h5>
+                </div>
+                <div id="internetCollapseTwo" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <p>Yes! You are guaranteed a number of pause time per packages that you avail.</p>
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Package</th>
+                            <th>Pause Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>5 HTC</td>
+                            <td>2 Pause time</td>
+                          </tr>
+                          <tr>
+                            <td>10 HTC</td>
+                            <td>4 Pause time</td>
+                          </tr>
+                          <tr>
+                            <td>99 HTC</td>
+                            <td>No Pause time</td>
+                          </tr>
+                          <tr>
+                            <td>299 HTC</td>
+                            <td>No Pause time</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingThree" data-toggle="collapse" data-target="#internetCollapseThree">
+                  <h5 class="mb-0">How can I pause my time at HiTok?</h5>
+                </div>
+                <div id="internetCollapseThree" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Traffic Package Icon at the bottom center</li>
+                      <li>Click Enable/Disable</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingFour" data-toggle="collapse" data-target="#internetCollapseFour">
+                  <h5 class="mb-0">How can I buy your services?</h5>
+                </div>
+                <div id="internetCollapseFour" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Traffic Package Icon at the bottom center</li>
+                      <li>Click Voucher Order</li>
+                      <li>Choose from the packages you want to avail</li>
+                      <li>Click Confirm</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingFive" data-toggle="collapse" data-target="#internetCollapseFive">
+                  <h5 class="mb-0">How can I view my Internet Traffic History?</h5>
+                </div>
+                <div id="internetCollapseFive" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Traffic Package Icon at the bottom center</li>
+                      <li>View your History</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingSix" data-toggle="collapse" data-target="#internetCollapseSix">
+                  <h5 class="mb-0">How can I connect to HiWiFi Network?</h5>
+                </div>
+                <div id="internetCollapseSix" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open your Settings on your device</li>
+                      <li>Click Connection or Wifi</li>
+                      <li>Click or Long press HiWiFi</li>
+                      <li>Once you are at the HiWiFi portal, You have been successfully connected</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="internetHeadingSeven" data-toggle="collapse" data-target="#internetCollapseSeven">
+                  <h5 class="mb-0">How can I change my DEVICE MAC?</h5>
+                </div>
+                <div id="internetCollapseSeven" class="collapse" data-parent="#internetAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open your Settings on your device</li>
+                      <li>Click Connection or Wifi</li>
+                      <li>Click or Long press HiWiFi</li>
+                      <li>Click Modify</li>
+                      <li>Click Privacy</li>
+                      <li>Click Device Mac Address and Save</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Network Tab -->
+          <div class="tab-pane fade" id="social" role="tabpanel">
+            <div class="accordion" id="socialAccordion">
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="socialHeadingOne" data-toggle="collapse" data-target="#socialCollapseOne">
+                  <h5 class="mb-0">How can I post a moment?</h5>
+                </div>
+                <div id="socialCollapseOne" class="collapse" data-parent="#socialAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Moment Icon at the bottom center</li>
+                      <li>Click Camera Icon at the top corner</li>
+                      <li>Select a Photo to post as moment</li>
+                      <li>(Optional) Write a description for your moment</li>
+                      <li>Click Publish to post</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="socialHeadingTwo" data-toggle="collapse" data-target="#socialCollapseTwo">
+                  <h5 class="mb-0">How can I tag a friend at my moment?</h5>
+                </div>
+                <div id="socialCollapseTwo" class="collapse" data-parent="#socialAccordion">
+                  <div class="faq-body">
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Moment Icon at the bottom center</li>
+                      <li>Click Camera Icon at the top corner</li>
+                      <li>Select a Photo to post as moment</li>
+                      <li>(Optional) Write a description for your moment</li>
+                      <li>Click the @ and select your friend</li>
+                      <li>Click Publish to post</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="faq-card">
+                <div class="faq-header collapsed" id="socialHeadingThree" data-toggle="collapse" data-target="#socialCollapseThree">
+                  <h5 class="mb-0">How can I add a friend?</h5>
+                </div>
+                <div id="socialCollapseThree" class="collapse" data-parent="#socialAccordion">
+                  <div class="faq-body">
+                    <p><strong>Option 1</strong></p>
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Contact Icon at the bottom center</li>
+                      <li>Click New Friends</li>
+                      <li>Type the Account or Bind Phone number</li>
+                      <li>Click Add friend</li>
+                    </ol>
+                    <p><strong>Option 2</strong></p>
+                    <ol>
+                      <li>Open and Log-in your HiTok Application</li>
+                      <li>Click the Contact Icon at the bottom center</li>
+                      <li>Click New Friends</li>
+                      <li>Click Scan</li>
+                      <li>Scan your friends QR Code</li>
+                      <li>Click Add friend</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-4">
+          <a href="#contact" class="btn btn-primary">Still have questions? Contact Us</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- CSS for Tabs -->
+
+
+<!-- Video Tutorials Start -->
+<!-- Enhanced Tutorials Section -->
+<section class="section bg-light" id="tutorials">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="mb-3">HiTok Tutorials</h2>
+      <p class="text-muted">Learn how to get the most out of HiTok</p>
+      <div class="d-flex justify-content-center">
+        <div class="search-container position-relative" style="max-width: 400px;">
+          <input type="text" id="tutorialSearch" class="form-control rounded-pill ps-4" placeholder="Search tutorials...">
+          <i class="fas fa-search position-absolute" style="top: 12px; right: 20px;"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="text-center mt-4">
+      <div class="btn-group filter-buttons" role="group">
+        <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+        <button type="button" class="btn btn-outline-primary" data-filter="wallet">Wallet</button>
+        <button type="button" class="btn btn-outline-primary" data-filter="internet">Internet</button>
+        <button type="button" class="btn btn-outline-primary" data-filter="social">Social</button>
+        <button type="button" class="btn btn-outline-primary" data-filter="profile">Profile</button>
+        <button type="button" class="btn btn-outline-primary" data-filter="rewards">Rewards</button>
+      </div>
+    </div>
+    <br>
+
+    <div class="position-relative">
+      <div id="videoCarousel" class="owl-carousel owl-theme">
+        <!-- Tutorial Video 1 -->
+        <div class="item tutorial-card" data-categories="wallet">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/topup.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">2:15</div>
+              <div class="category-badge">Wallet</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">How to Top Up</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 1.2k</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 2 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video 2 -->
+        <div class="item tutorial-card" data-categories="rewards">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/points.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">1:45</div>
+              <div class="category-badge">Rewards</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">Earn HiTok Points</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 980</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 2 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video 3 -->
+        <div class="item tutorial-card" data-categories="internet">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/getfree45mins.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">1:30</div>
+              <div class="category-badge">Internet</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">Get Free 45 Minutes</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 2.1k</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 1 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video 4 -->
+        <div class="item tutorial-card" data-categories="social">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/moments.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">3:20</div>
+              <div class="category-badge">Social</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">HiTok Moments</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 1.5k</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 3 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video 5 -->
+        <div class="item tutorial-card" data-categories="social">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/post in moments.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">2:45</div>
+              <div class="category-badge">Social</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">Post in Moments</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 890</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 3 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video 6 -->
+        <div class="item tutorial-card" data-categories="profile">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/setup profile.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">4:10</div>
+              <div class="category-badge">Profile</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">Setup Profile</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 1.7k</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 4 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutorial Video 7 -->
+        <div class="item tutorial-card" data-categories="wallet">
+          <div class="card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="video-thumbnail position-relative">
+              <video src="static/videos/voucher purchase.mp4" muted loop playsinline></video>
+              <div class="play-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+              <div class="duration-badge">3:15</div>
+              <div class="category-badge">Wallet</div>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="mb-0">Purchase Voucher</h6>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="badge bg-light text-dark me-1"><i class="fas fa-eye me-1"></i> 1.3k</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 3 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<!-- Enhanced Video Modal with Working Close Button -->
+<div class="modal fade" id="tutorialVideoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0 position-absolute top-0 end-0 z-3">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" id="modalCloseButton"></button>
+      </div>
+      <div class="modal-body p-0 ratio ratio-16x9">
+        <video id="tutorialModalVideo" controls class="w-100 h-100"></video>
+      </div>
+      <div class="modal-footer bg-dark text-white border-0">
+        <div class="w-100">
+          <h5 id="videoTitle" class="mb-2"></h5>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="badge bg-primary me-2" id="videoCategory"></span>
+              <span class="text-muted" id="videoDuration"></span>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-light me-2">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="btn btn-sm btn-outline-light">
+                <i class="far fa-bookmark"></i> Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Tutorials End -->
 
 
 
@@ -672,7 +1419,7 @@
   </footer>
 
 <!-- YouTube Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-dark">
       <div class="modal-header border-0">
@@ -687,7 +1434,26 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+
+
+<!-- Video Modal for demo video -->
+ <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="modalVideo" controls class="w-100"></video>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -699,6 +1465,8 @@
   <script src="static/js/owl.carousel.min.js"></script>
   <script src="static/js/feather-icons.js"></script>
   
+
+
   <script>
     $(document).ready(function(){
       // Initialize carousels
@@ -713,35 +1481,57 @@
         }
       });
       
-  $('.play-button').click(function () {
-  var videoId = $(this).data('video-id');
-  var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
-  $('#youtubeIframe').attr('src', embedUrl);
-  $('#videoModal').modal('show');
-});
 
-$('#videoModal').on('hide.bs.modal', function () {
-  $('#youtubeIframe').attr('src', '');
-});
+      // Handle local video modal
+      // Open tutorial modal with selected local video
+  // $('#tutorialVideoModal').on('show.bs.modal', function (e) {
+  //   var videoSrc = $(e.relatedTarget).data('video');
+  //   var video = $('#tutorialModalVideo').get(0);
+  //   video.src = videoSrc;
+  //   video.load();
+  //   video.play();
+  // });
+
+  // // Properly stop & unload video on modal close to prevent infinite network requests
+  // $('#tutorialVideoModal').on('hidden.bs.modal', function () {
+  //   var video = $('#tutorialModalVideo').get(0);
+  //   video.pause();
+  //   video.removeAttribute('src'); // unload source
+  //   video.load(); // reset element to stop buffering
+  // });
 
 
-    $('#videoModal').on('hide.bs.modal', function() {
-      $('#youtubeIframe').attr('src', '');
-    });
+
+
+//   $('.play-button').click(function () {
+//   var videoId = $(this).data('video-id');
+//   var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+//   $('#youtubeIframe').attr('src', embedUrl);
+//   $('#videoModal').modal('show');
+// });
+
+// $('#videoModal').on('hide.bs.modal', function () {
+//   $('#youtubeIframe').attr('src', '');
+// });
+
+
+//     $('#videoModal').on('hide.bs.modal', function() {
+//       $('#youtubeIframe').attr('src', '');
+//     });
 
       
-      // Close video modal properly
-      $('#videoModal').on('hide.bs.modal', function(){
-        $('#modalVideo').attr('src', '');
-      });
+//       // Close video modal properly
+//       $('#videoModal').on('hide.bs.modal', function(){
+//         $('#modalVideo').attr('src', '');
+//       });
       
       // FAQ search functionality
-      $('#faqSearch').on('keyup', function(){
-        var value = $(this).val().toLowerCase();
-        $('.faq-card').filter(function(){
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
+      // $('#faqSearch').on('keyup', function(){
+      //   var value = $(this).val().toLowerCase();
+      //   $('.faq-card').filter(function(){
+      //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      //   });
+      // });
       
       // Smooth scrolling
       $('a[href*="features"]').on('click', function(e){
@@ -767,6 +1557,8 @@ $('#videoModal').on('hide.bs.modal', function () {
       });
     });
     
+
+    // Open video modal for demo video
     function openVideoModal() {
       $('#modalVideo').attr('src', 'static/videos/hitok_video1.mp4');
       $('#videoModal').modal('show');
@@ -808,6 +1600,139 @@ $('#videoModal').on('hide.bs.modal', function () {
 //     });
 //   });
     
+    //masked name functionality
+    function maskSameIdH6(id) {
+  document.querySelectorAll(`#${id}`).forEach(h6 => {
+    const masked = h6.textContent
+      .split(' ')
+      .map(word => {
+        if (word.length <= 2) return word;
+        return word[0] + '*'.repeat(word.length - 2) + word[word.length - 1];
+      })
+      .join(' ');
+    h6.textContent = masked;
+  });
+}
+
+// Mask all h6 elements with id="maskedName"
+maskSameIdH6('maskedName');
+  
+
+  $(document).ready(function(){
+  // Make tabs swipeable on mobile
+  $('.nav-tabs a').on('touchstart', function(e) {
+    $(this).click();
+  });
+  
+  // // Search functionality
+  // $('#faqSearch').on('keyup', function() {
+  //   var value = $(this).val().toLowerCase();
+  //   $('.faq-card').filter(function() {
+  //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  //   });
+  // });
+});
+
+
+  // script for tutorial video modals
+  $(document).ready(function(){
+    // Initialize carousel
+    const tutorialCarousel = $('#videoCarousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 4 }
+      }
+    });
+    
+    // Set video thumbnails to first frame
+    $('.video-thumbnail video').each(function(){
+      // Set currentTime to 1 second to avoid black frames
+      this.currentTime = 1;
+      
+      // When enough data is loaded, show the frame
+      $(this).on('loadeddata', function(){
+        $(this).show();
+      });
+    });
+    
+    // Handle video click to open modal
+    $('.tutorial-card').click(function(){
+      const videoSrc = $(this).find('video').attr('src');
+      const videoTitle = $(this).find('.card-body h6').text();
+      const videoCategory = $(this).find('.category-badge').text();
+      const videoDuration = $(this).find('.duration-badge').text();
+      
+      $('#tutorialModalVideo').attr('src', videoSrc);
+      $('#videoTitle').text(videoTitle);
+      $('#videoCategory').text(videoCategory);
+      $('#videoDuration').text(videoDuration);
+      $('#tutorialVideoModal').modal('show');
+    });
+    
+    // Reset video when modal closes
+    $('#tutorialVideoModal').on('hidden.bs.modal', function(){
+      $('#tutorialModalVideo').attr('src', '');
+    });
+    
+    // Filter functionality
+    $('.filter-buttons button').click(function(){
+      const filter = $(this).data('filter');
+      
+      // Update active button
+      $('.filter-buttons button').removeClass('active');
+      $(this).addClass('active');
+      
+      if(filter === 'all') {
+        $('.tutorial-card').show();
+      } else {
+        $('.tutorial-card').hide();
+        $(`.tutorial-card[data-categories*="${filter}"]`).show();
+      }
+      
+      // Refresh carousel after filtering
+      tutorialCarousel.trigger('refresh.owl.carousel');
+    });
+    
+    // Search functionality
+    $('#tutorialSearch').on('keyup', function(){
+      const searchTerm = $(this).val().toLowerCase();
+      
+      $('.tutorial-card').each(function(){
+        const cardText = $(this).text().toLowerCase();
+        if(cardText.includes(searchTerm)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+      
+      // Refresh carousel after searching
+      tutorialCarousel.trigger('refresh.owl.carousel');
+    });
+
+
+    // Close modal functionality
+    $('#modalCloseButton').click(function() {
+      $('#tutorialVideoModal').modal('hide');
+    });
+
+    // Pause video when modal closes
+    $('#tutorialVideoModal').on('hidden.bs.modal', function(){
+      $('#tutorialModalVideo').get(0).pause();
+      $('#tutorialModalVideo').attr('src', '');
+    });
+
+  });
+
+
+  
+
   </script>
 
   

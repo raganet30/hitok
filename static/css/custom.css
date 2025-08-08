@@ -43,6 +43,50 @@
       margin-bottom: 30px;
     }
     
+
+    /* Buton groups & badges */
+    /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .button-group {
+      text-align: center;
+    }
+    .app-download-badges {
+      margin-top: 1rem;
+    }
+    .btn-lg {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Smooth hover effects */
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .button-group {
+      text-align: center;
+    }
+    .app-download-badges {
+      margin-top: 1rem;
+     
+    }
+    .btn-lg {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Smooth hover effects */
+  .app-download-badges img {
+    transition: transform 0.2s ease;
+  }
+  .app-download-badges img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+
+
     /* App Badges */
     .app-badge {
       transition: all 0.3s ease;
@@ -201,7 +245,192 @@
     }
 
 
-    .play-button:hover {
+    /* .play-button:hover {
   transform: translate(-50%, -50%) scale(1.1);
   transition: 0.3s;
-}
+} */
+
+
+
+
+
+
+
+
+
+   /* Improved tab navigation */
+  .scrollable-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    margin-bottom: -1px; /* Align with tab content */
+  }
+  
+  .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+    display: inline-flex;
+    min-width: 100%;
+    flex-wrap: nowrap;
+  }
+  
+  .nav-tabs .nav-item {
+    flex: 1 0 auto;
+    text-align: center;
+    min-width: 100px;
+  }
+  
+  .nav-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    color: #007bff;
+    background-color: rgba(0,123,255,0.05);
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: #007bff;
+    background-color: transparent;
+    border-bottom: 2px solid #007bff;
+    font-weight: 600;
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 767.98px) {
+    .nav-tabs .nav-link {
+      padding: 0.75rem 0.25rem;
+      font-size: 0.85rem;
+    }
+    
+    .nav-tabs .nav-item {
+      min-width: 80px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .nav-tabs .nav-item {
+      flex: 1;
+    }
+    
+    .nav-tabs .nav-link {
+      padding: 0.75rem 1rem;
+    }
+    
+    .scrollable-tabs {
+      overflow-x: visible;
+    }
+    
+    .nav-tabs {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+
+
+  /* custom css for tutorial video modals */
+  /* Video Thumbnail Styles */
+  .video-thumbnail {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    background: #000;
+    cursor: pointer;
+  }
+  
+  .video-thumbnail video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+    opacity: 0.9;
+  }
+  
+  .duration-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  
+  .category-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  
+  .tutorial-card:hover .play-overlay {
+    color: var(--primary);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .tutorial-card:hover video {
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styles */
+  #tutorialVideoModal .modal-content {
+    border: none;
+    border-radius: 0;
+  }
+  
+  #tutorialVideoModal .modal-header {
+    z-index: 1;
+  }
+  
+  /* Filter buttons */
+  .filter-buttons .btn {
+    margin: 2px;
+    border-radius: 20px !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .filter-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .filter-buttons .btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      margin: 2px;
+    }
+    .video-thumbnail .play-overlay {
+      font-size: 2rem;
+    }
+  }
+
+
+
+
+  
