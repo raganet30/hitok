@@ -6,7 +6,7 @@
 <title>HiTok - All-in-One Social Chat &amp; Network Services</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="HiTok combines messaging, e-wallet, and affordable internet services in one app" name="description"/>
-<meta content="hitok,hiwifi, social app, e-wallet, philippines internet, chat app" name="keywords"/>
+<meta content="hitok, social app, e-wallet, philippines internet, chat app" name="keywords"/>
 <!-- Favicon -->
 <link href="static/picture/hitok logo - transparent bg.png" rel="icon"/>
 <!-- Font Awesome -->
@@ -15,17 +15,12 @@
 <!-- <link href="static/css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <!-- Owl Carousel -->
-<!-- <link href="static/css/owl.carousel.min.css" rel="stylesheet"/> -->
+<link href="static/css/owl.carousel.min.css" rel="stylesheet"/>
 <!-- Custom CSS -->
-<!-- <link href="static/css/style.min.css" rel="stylesheet"/> -->
+<link href="static/css/style.min.css" rel="stylesheet"/>
 <link href="static/css/custom.css" rel="stylesheet"/>
 </head>
-
-
-  
-<body data-bs-spy="scroll" data-bs-target="#navbarCollapse" data-bs-offset="80" tabindex="0">
-
-
+<body>
 <!-- Loader -->
 <!-- <div id="preloader">
     <div id="status">
@@ -36,31 +31,29 @@
       </div>
     </div>
   </div> -->
-
-
 <!-- Navbar -->
-<!-- Modern Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm navbar-modern">
-  <div class="container">
-    <a class="navbar-brand" href="#home">
-      <img src="static/picture/HiTok-logo.png" alt="HiTok" height="30" class="me-2">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+<div class="container">
+<a class="navbar-brand" href="#">
+<img alt="HiTok" height="30" src="static/picture/HiTok-logo.png"/>
+</a>
+<button class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+<i class="fas fa-bars"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+<li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+<li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+<!-- <li class="nav-item ml-lg-3">
+            <a class="btn btn-outline-primary" href="#download">Download</a>
+          </li> -->
+</ul>
+</div>
+</div>
 </nav>
-
-
 <!-- Hero Section -->
 <section class="hero-section" id="home">
 <div class="container">
@@ -72,7 +65,7 @@
 <a class="btn btn-primary btn-lg px-4" href="#" onclick="openVideoModal()">
 <i class="fas fa-play-circle me-2"></i> Watch Demo
             </a>
-
+<!-- <span style="width: 5px;"></span> -->
 <a class="btn btn-outline-primary btn-lg px-4" href="#features">
               Explore Features
             </a>
@@ -83,11 +76,11 @@
 <a href="https://apps.apple.com/app/hitok/id6569241593">
 <img alt="App Store" class="app-badge" src="static/image/appstore.png" style="height: 45px;"/>
 </a>
-
+<!-- <span style="width: 5px;"></span> -->
 <a href="https://play.google.com/store/apps/details?id=com.hitok.prod">
 <img alt="Google Play" class="app-badge" src="static/image/googleplay.png" style="height: 45px;"/>
 </a>
-
+<!-- <span style="width: 5px;"></span> -->
 <a href="https://web.hi-tok.net/appdownload/android/HiTok.apk">
 <img alt="Direct Download" class="app-badge" src="static/image/android.png" style="height: 45px;"/>
 </a>
@@ -1296,53 +1289,27 @@
 </div>
 </div>
 </section>
-
 <!-- Footer -->
-<!-- Modern Footer -->
-<footer class="footer-modern text-light pt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <img src="static/picture/HiTok-logo.png" alt="HiTok Logo" height="40" class="mb-3">
-        <p>HiTok combines messaging, e-wallet, and affordable internet services in one easy-to-use platform.</p>
-      </div>
-      <div class="col-md-2 mb-4">
-        <h6 class="fw-bold">Quick Links</h6>
-        <ul class="list-unstyled">
-          <li><a href="#home" class="footer-link">Home</a></li>
-          <li><a href="#features" class="footer-link">Features</a></li>
-          <li><a href="#faqs" class="footer-link">FAQs</a></li>
-          <li><a href="#tutorials" class="footer-link">Tutorials</a></li>
-          <li><a href="#contact" class="footer-link">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Follow Us</h6>
-        <div class="d-flex gap-3">
-          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Download App</h6>
-        <a href="https://apps.apple.com/app/hitok/id6569241593" target="_blank">
-          <img src="static/image/appstore.png" height="40" class="me-2" alt="Download on the App Store">
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.hitok.prod" target="_blank">
-          <img src="static/image/googleplay.png" height="40" alt="Get it on Google Play">
-        </a>
-      </div>
-    </div>
-    <hr class="border-light">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3">
-      <span>&copy; 2025 HiTok. All rights reserved.</span>
-      <span class="small">Powered by <strong>HI-SEAS CO. LTD. INC.</strong></span>
-    </div>
-  </div>
+<footer class="footer py-4">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-4 text-lg-left mb-3 mb-lg-0">
+<img alt="HiTok" height="30" src="static/picture/HiTok-logo.png"/>
+</div>
+<!-- <div class="col-lg-4 text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#home">Home</a></li>
+            <li class="list-inline-item"><a href="#features">Features</a></li>
+            <li class="list-inline-item"><a href="#faqs">FAQs</a></li>
+            <li class="list-inline-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div> -->
+<div class="col-lg-4 text-lg-right">
+<p class="mb-0">© 2024 <strong>HiTok.</strong>  All rights reserved.</p>
+</div>
+</div>
+</div>
 </footer>
-
 <!-- YouTube Modal -->
 <!-- <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1360,203 +1327,294 @@
     </div>
   </div>
 </div> -->
-
-
 <!-- Video Modal for demo video -->
 <!-- Video Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content bg-dark">
-            <div class="modal-header border-0 position-absolute top-0 end-0 z-3">
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-0 ratio ratio-16x9">
-                <video class="w-100 h-100" controls id="modalVideo"></video>
-            </div>
-            <div class="modal-footer bg-dark text-white border-0">
-                <div class="w-100">
-                    <h5 class="mb-2">HiTok Demo</h5>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-primary me-2">Demo</span>
-                        <div>
-                            <button class="btn btn-sm btn-outline-light me-2">
-                                <i class="fas fa-share-alt"></i> Share
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div aria-hidden="true" class="modal fade" id="videoModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content bg-dark">
+<div class="modal-header border-0">
+<button aria-label="Close" class="close text-white" data-bs-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
 </div>
-
-
-
-<!-- jQuery (required for Owl Carousel) -->
+<div class="modal-body p-0">
+<video class="w-100" controls="" id="modalVideo"></video>
+</div>
+</div>
+</div>
+</div>
+<!-- JavaScript -->
+<!-- <script src="static/js/jquery.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/feather-icons.js"></script>
 <script>
     $(document).ready(function(){
-        // Initialize carousels
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            responsive: {
-                0: { items: 1 },
-                768: { items: 2 },
-                992: { items: 3 }
-            }
-        });
-
-        // Update active nav link on scroll
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section[id]');
-            const scrollY = window.pageYOffset;
-            const navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
-
-            // Reset all nav links
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-
-            // Find current section and activate corresponding nav link
-            sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 80; // Adjust for navbar height
-            const sectionId = current.getAttribute('id');
-
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                const navLink = document.querySelector(`.navbar-nav a[href="#${sectionId}"]`);
-                if (navLink) {
-                    navLink.classList.add('active');
-                }
-            }
-        });
-
-            
-        });
-
-        // Smooth scrolling for all nav links
-        document.querySelectorAll('.navbar-nav a.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                if (this.hash) {
-                    e.preventDefault();
-                    document.querySelector(this.hash).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Initialize tutorial carousel
-        const tutorialCarousel = $('#videoCarousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            dots: false,
-            responsive: {
-                0: { items: 1 },
-                576: { items: 2 },
-                768: { items: 3 },
-                992: { items: 4 }
-            }
-        });
-
-        // Set video thumbnails to first frame
-        $('.video-thumbnail video').each(function(){
-            this.currentTime = 1;
-            $(this).on('loadeddata', function(){
-                $(this).show();
-            });
-        });
-
-        // Handle video click to open modal
-        $('.tutorial-card').click(function(){
-            const videoSrc = $(this).find('video').attr('src');
-            const videoTitle = $(this).find('.card-body h6').text();
-            const videoCategory = $(this).find('.category-badge').text();
-            const videoDuration = $(this).find('.duration-badge').text();
-            
-            $('#tutorialModalVideo').attr('src', videoSrc)[0].load();
-            $('#videoTitle').text(videoTitle);
-            $('#videoCategory').text(videoCategory);
-            $('#videoDuration').text(videoDuration);
-            $('#tutorialVideoModal').modal('show');
-        });
-
-        // Reset video when modal closes
-        $('#tutorialVideoModal').on('hidden.bs.modal', function(){
-            $('#tutorialModalVideo').attr('src', '')[0].pause();
-        });
-
-        // Filter functionality
-        $('.filter-buttons button').click(function(){
-            const filter = $(this).data('filter');
-            $('.filter-buttons button').removeClass('active');
-            $(this).addClass('active');
-            
-            if(filter === 'all') {
-                $('.tutorial-card').show();
-            } else {
-                $('.tutorial-card').hide();
-                $(`.tutorial-card[data-categories*="${filter}"]`).show();
-            }
-            
-            tutorialCarousel.trigger('refresh.owl.carousel');
-        });
-
-        // Search functionality
-        $('#tutorialSearch').on('keyup', function(){
-            const searchTerm = $(this).val().toLowerCase();
-            
-            $('.tutorial-card').each(function(){
-                const cardText = $(this).text().toLowerCase();
-                $(this).toggle(cardText.includes(searchTerm));
-            });
-            
-            tutorialCarousel.trigger('refresh.owl.carousel');
-        });
-
-        // Mask names functionality
-        function maskSameIdH6(id) {
-            document.querySelectorAll(`#${id}`).forEach(h6 => {
-                const masked = h6.textContent
-                    .split(' ')
-                    .map(word => {
-                        if (word.length <= 2) return word;
-                        return word[0] + '*'.repeat(word.length - 2) + word[word.length - 1];
-                    })
-                    .join(' ');
-                h6.textContent = masked;
-            });
+      // Initialize carousels
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          992: { items: 3 }
         }
-        maskSameIdH6('maskedName');
+      });
+      
+
+      // Handle local video modal
+      // Open tutorial modal with selected local video
+  // $('#tutorialVideoModal').on('show.bs.modal', function (e) {
+  //   var videoSrc = $(e.relatedTarget).data('video');
+  //   var video = $('#tutorialModalVideo').get(0);
+  //   video.src = videoSrc;
+  //   video.load();
+  //   video.play();
+  // });
+
+  // // Properly stop & unload video on modal close to prevent infinite network requests
+  // $('#tutorialVideoModal').on('hidden.bs.modal', function () {
+  //   var video = $('#tutorialModalVideo').get(0);
+  //   video.pause();
+  //   video.removeAttribute('src'); // unload source
+  //   video.load(); // reset element to stop buffering
+  // });
+
+
+
+
+//   $('.play-button').click(function () {
+//   var videoId = $(this).data('video-id');
+//   var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+//   $('#youtubeIframe').attr('src', embedUrl);
+//   $('#videoModal').modal('show');
+// });
+
+// $('#videoModal').on('hide.bs.modal', function () {
+//   $('#youtubeIframe').attr('src', '');
+// });
+
+
+//     $('#videoModal').on('hide.bs.modal', function() {
+//       $('#youtubeIframe').attr('src', '');
+//     });
+
+      
+//       // Close video modal properly
+//       $('#videoModal').on('hide.bs.modal', function(){
+//         $('#modalVideo').attr('src', '');
+//       });
+      
+      // FAQ search functionality
+      // $('#faqSearch').on('keyup', function(){
+      //   var value = $(this).val().toLowerCase();
+      //   $('.faq-card').filter(function(){
+      //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      //   });
+      // });
+      
+      // Smooth scrolling
+      $('a[href*="features"]').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate(
+          { scrollTop: $($(this).attr('href')).offset().top - 70 },
+          500,
+          'linear'
+        );
+      });
+      
+      // Animation on scroll
+      $(window).scroll(function(){
+        $('.fade-in').each(function(){
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          
+          if (scroll > position - windowHeight + 100) {
+            $(this).addClass('animated');
+          }
+        });
+      });
     });
+    
 
     // Open video modal for demo video
     function openVideoModal() {
-        const video = document.getElementById('modalVideo');
-        video.src = 'static/videos/hitok_video1.mp4';
-        video.load();
-        
-        $('#videoModal').on('hidden.bs.modal', function() {
-            video.pause();
-            video.currentTime = 0;
-        });
-        
-        $('#videoModal').modal('show');
+      $('#modalVideo').attr('src', 'static/videos/hitok_video1.mp4');
+      $('#videoModal').modal('show');
     }
-</script>
 
-</body>
+
+
+
+//     // thumbs up and down functionality
+//      $(document).ready(function(){
+//     // Handle thumbs up/down clicks
+//     $('.btn-outline-primary, .btn-outline-secondary').click(function(e){
+//       e.preventDefault();
+//       var btn = $(this);
+//       var isThumbsUp = btn.hasClass('btn-outline-primary');
+      
+//       // Toggle active state
+//       btn.toggleClass('active');
+      
+//       // Update count
+//       var countElement = btn.find('i').next();
+//       var currentCount = parseInt(countElement.text()) || 0;
+      
+//       if(btn.hasClass('active')) {
+//         countElement.text(currentCount + 1);
+//         if(isThumbsUp) {
+//           btn.removeClass('btn-outline-primary').addClass('btn-primary');
+//         } else {
+//           btn.removeClass('btn-outline-secondary').addClass('btn-secondary');
+//         }
+//       } else {
+//         countElement.text(Math.max(0, currentCount - 1));
+//         if(isThumbsUp) {
+//           btn.removeClass('btn-primary').addClass('btn-outline-primary');
+//         } else {
+//           btn.removeClass('btn-secondary').addClass('btn-outline-secondary');
+//         }
+//       }
+//     });
+//   });
+    
+    //masked name functionality
+    function maskSameIdH6(id) {
+  document.querySelectorAll(`#${id}`).forEach(h6 => {
+    const masked = h6.textContent
+      .split(' ')
+      .map(word => {
+        if (word.length <= 2) return word;
+        return word[0] + '*'.repeat(word.length - 2) + word[word.length - 1];
+      })
+      .join(' ');
+    h6.textContent = masked;
+  });
+}
+
+// Mask all h6 elements with id="maskedName"
+maskSameIdH6('maskedName');
+  
+
+  $(document).ready(function(){
+  // Make tabs swipeable on mobile
+  $('.nav-tabs a').on('touchstart', function(e) {
+    $(this).click();
+  });
+  
+  // // Search functionality
+  // $('#faqSearch').on('keyup', function() {
+  //   var value = $(this).val().toLowerCase();
+  //   $('.faq-card').filter(function() {
+  //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  //   });
+  // });
+});
+
+
+  // script for tutorial video modals
+  $(document).ready(function(){
+    // Initialize carousel
+    const tutorialCarousel = $('#videoCarousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 4 }
+      }
+    });
+    
+    // Set video thumbnails to first frame
+    $('.video-thumbnail video').each(function(){
+      // Set currentTime to 1 second to avoid black frames
+      this.currentTime = 1;
+      
+      // When enough data is loaded, show the frame
+      $(this).on('loadeddata', function(){
+        $(this).show();
+      });
+    });
+    
+    // Handle video click to open modal
+    $('.tutorial-card').click(function(){
+      const videoSrc = $(this).find('video').attr('src');
+      const videoTitle = $(this).find('.card-body h6').text();
+      const videoCategory = $(this).find('.category-badge').text();
+      const videoDuration = $(this).find('.duration-badge').text();
+      
+      $('#tutorialModalVideo').attr('src', videoSrc);
+      $('#videoTitle').text(videoTitle);
+      $('#videoCategory').text(videoCategory);
+      $('#videoDuration').text(videoDuration);
+      $('#tutorialVideoModal').modal('show');
+    });
+    
+    // Reset video when modal closes
+    $('#tutorialVideoModal').on('hidden.bs.modal', function(){
+      $('#tutorialModalVideo').attr('src', '');
+    });
+    
+    // Filter functionality
+    $('.filter-buttons button').click(function(){
+      const filter = $(this).data('filter');
+      
+      // Update active button
+      $('.filter-buttons button').removeClass('active');
+      $(this).addClass('active');
+      
+      if(filter === 'all') {
+        $('.tutorial-card').show();
+      } else {
+        $('.tutorial-card').hide();
+        $(`.tutorial-card[data-categories*="${filter}"]`).show();
+      }
+      
+      // Refresh carousel after filtering
+      tutorialCarousel.trigger('refresh.owl.carousel');
+    });
+    
+    // Search functionality
+    $('#tutorialSearch').on('keyup', function(){
+      const searchTerm = $(this).val().toLowerCase();
+      
+      $('.tutorial-card').each(function(){
+        const cardText = $(this).text().toLowerCase();
+        if(cardText.includes(searchTerm)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+      
+      // Refresh carousel after searching
+      tutorialCarousel.trigger('refresh.owl.carousel');
+    });
+
+
+    // Close modal functionality
+    $('#modalCloseButton').click(function() {
+      $('#tutorialVideoModal').modal('hide');
+    });
+
+    // Pause video when modal closes
+    $('#tutorialVideoModal').on('hidden.bs.modal', function(){
+      $('#tutorialModalVideo').get(0).pause();
+      $('#tutorialModalVideo').attr('src', '');
+    });
+
+  });
+
+
+  
+
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
