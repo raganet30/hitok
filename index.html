@@ -82,15 +82,15 @@
           <div class="app-download-badges">
             <p class="text-muted mb-2">Download Now:</p>
             <div class="d-flex flex-wrap gap-2">
-              <a href="https://apps.apple.com/app/hitok/id6569241593">
+              <a href="https://apps.apple.com/app/hitok/id6569241593" target="_blank">
                 <img alt="App Store" class="app-badge" src="static/image/appstore.png" style="height: 45px;" />
               </a>
 
-              <a href="https://play.google.com/store/apps/details?id=com.hitok.prod">
+              <a href="https://play.google.com/store/apps/details?id=com.hitok.prod" target="_blank">
                 <img alt="Google Play" class="app-badge" src="static/image/googleplay.png" style="height: 45px;" />
               </a>
 
-              <a href="https://web.hi-tok.net/appdownload/android/HiTok.apk">
+              <a href="https://web.hi-tok.net/appdownload/android/HiTok.apk" target="_blank">
                 <img alt="Direct Download" class="app-badge" src="static/image/android.png" style="height: 45px;" />
               </a>
             </div>
@@ -100,7 +100,7 @@
           <div class="carousel slide shadow-lg rounded-lg" data-bs-ride="carousel" id="heroCarousel">
             <div class="carousel-inner rounded-lg">
               <div class="carousel-item active">
-                <img alt="HiTok App Screenshot" class="d-block w-100" src="static/picture/hitok poster new.png"  />
+                <img alt="HiTok App Screenshot" class="d-block w-100" src="static/picture/Hitok Poster (1080x1080px).png"  />
               </div>
               <div class="carousel-item">
                 <img alt="HiTok Features" class="d-block w-100" src="static/picture/poster2.jpeg" />
@@ -1064,7 +1064,8 @@
       </div>
     </div>
   </section>
-  <!-- CSS for Tabs -->
+
+
   <!-- Video Tutorials Start -->
   <!-- Enhanced Tutorials Section -->
   <section class="section bg-light" id="tutorials">
@@ -1443,164 +1444,11 @@
 
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-  <script>
-    $(document).ready(function () {
-      // Initialize carousels
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          992: { items: 3 }
-        }
-      });
-
-      // Update active nav link on scroll
-      window.addEventListener('scroll', function () {
-        const sections = document.querySelectorAll('section[id]');
-        const scrollY = window.pageYOffset;
-        const navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
-
-        // Reset all nav links
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-        });
-
-        // Find current section and activate corresponding nav link
-        sections.forEach(current => {
-          const sectionHeight = current.offsetHeight;
-          const sectionTop = current.offsetTop - 80; // Adjust for navbar height
-          const sectionId = current.getAttribute('id');
-
-          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            const navLink = document.querySelector(`.navbar-nav a[href="#${sectionId}"]`);
-            if (navLink) {
-              navLink.classList.add('active');
-            }
-          }
-        });
-
-
-      });
-
-      // Smooth scrolling for all nav links
-      document.querySelectorAll('.navbar-nav a.nav-link').forEach(link => {
-        link.addEventListener('click', function (e) {
-          if (this.hash) {
-            e.preventDefault();
-            document.querySelector(this.hash).scrollIntoView({
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-
-      // Initialize tutorial carousel
-      const tutorialCarousel = $('#videoCarousel').owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        dots: false,
-        responsive: {
-          0: { items: 1 },
-          576: { items: 2 },
-          768: { items: 3 },
-          992: { items: 4 }
-        }
-      });
-
-      // Set video thumbnails to first frame
-      $('.video-thumbnail video').each(function () {
-        this.currentTime = 1;
-        $(this).on('loadeddata', function () {
-          $(this).show();
-        });
-      });
-
-      // Handle video click to open modal
-      $('.tutorial-card').click(function () {
-        const videoSrc = $(this).find('video').attr('src');
-        const videoTitle = $(this).find('.card-body h6').text();
-        const videoCategory = $(this).find('.category-badge').text();
-        const videoDuration = $(this).find('.duration-badge').text();
-
-        $('#tutorialModalVideo').attr('src', videoSrc)[0].load();
-        $('#videoTitle').text(videoTitle);
-        $('#videoCategory').text(videoCategory);
-        $('#videoDuration').text(videoDuration);
-        $('#tutorialVideoModal').modal('show');
-      });
-
-      // Reset video when modal closes
-      $('#tutorialVideoModal').on('hidden.bs.modal', function () {
-        $('#tutorialModalVideo').attr('src', '')[0].pause();
-      });
-
-      // Filter functionality
-      $('.filter-buttons button').click(function () {
-        const filter = $(this).data('filter');
-        $('.filter-buttons button').removeClass('active');
-        $(this).addClass('active');
-
-        if (filter === 'all') {
-          $('.tutorial-card').show();
-        } else {
-          $('.tutorial-card').hide();
-          $(`.tutorial-card[data-categories*="${filter}"]`).show();
-        }
-
-        tutorialCarousel.trigger('refresh.owl.carousel');
-      });
-
-      // Search functionality
-      $('#tutorialSearch').on('keyup', function () {
-        const searchTerm = $(this).val().toLowerCase();
-
-        $('.tutorial-card').each(function () {
-          const cardText = $(this).text().toLowerCase();
-          $(this).toggle(cardText.includes(searchTerm));
-        });
-
-        tutorialCarousel.trigger('refresh.owl.carousel');
-      });
-
-      // Mask names functionality
-      function maskSameIdH6(id) {
-        document.querySelectorAll(`#${id}`).forEach(h6 => {
-          const masked = h6.textContent
-            .split(' ')
-            .map(word => {
-              if (word.length <= 2) return word;
-              return word[0] + '*'.repeat(word.length - 2) + word[word.length - 1];
-            })
-            .join(' ');
-          h6.textContent = masked;
-        });
-      }
-      maskSameIdH6('maskedName');
-    });
-
-    // Open video modal for demo video
-    function openVideoModal() {
-      const video = document.getElementById('modalVideo');
-      video.src = 'static/videos/hitok_video1.mp4';
-      video.load();
-
-      $('#videoModal').on('hidden.bs.modal', function () {
-        video.pause();
-        video.currentTime = 0;
-      });
-
-      $('#videoModal').modal('show');
-    }
-  </script>
+  <script src="script.js"></script>
+  
 
 </body>
 
